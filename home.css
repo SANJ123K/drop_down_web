@@ -1,0 +1,109 @@
+*
+{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background-image: url('drop_down.jpg');
+	background-size:cover;
+}
+
+.header
+{
+	background-color:green;
+	text-align: center;
+}
+
+.header ul 
+{
+	display:inline-flex;
+	list-style: none;
+	color:white;
+}
+.header ul li 
+{
+  width:120px;
+  margin:15px;
+  padding:15px;
+
+}
+
+.header ul li a 
+{
+	text-decoration: none;
+	color:white;
+}
+
+.active ,  .header ul li:hover 
+{
+	background-color:#2bab0d;
+	border-radius: 3px;
+}
+
+.header ul li i 
+{
+	margin-right: 5px;
+}
+
+.sub-menu1 
+{
+	display:none;
+}
+
+.header ul li:hover .sub-menu1
+{
+	display: block;
+	background-color: green;
+	position:absolute;
+	margin-top:15px;
+	margin-right: 15px;
+
+}
+.header ul li:hover .sub-menu1 ul
+{
+	display:block;
+	margin:10px;
+}
+.header ul li:hover .sub-menu1 ul li
+{
+	width:130px;
+	padding:10px;
+	background:transparent;
+  border-bottom:1px dotted white;
+  text-align: left;
+
+}
+.header ul li:hover .sub-menu1 ul li:last-child
+{
+	border-bottom: none;
+}
+.fa-angle-right
+{
+	float:right;
+}
+
+.sub-menu2 
+{
+	display:none;
+}
+
+.hover-me:hover .sub-menu2 
+{
+	display:block;
+	position: absolute;
+	margin-top: -40px;
+	margin-left: 140px;
+	background-color: green;
+}
+
+main 
+{
+	height: 600px;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
